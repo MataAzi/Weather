@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: rgb(83, 127, 231);
+  background: linear-gradient(
+    159deg,
+    rgba(83, 127, 231, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-attachment: fixed;
+  font-family: Lato;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
