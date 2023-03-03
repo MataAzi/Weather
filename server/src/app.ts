@@ -8,7 +8,9 @@ import { getPolutionText } from './utils';
 
 const app = express();
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://weather-ten-xi.vercel.app/'
+}))
 
 app.get('/search', async (req, res) => {
     const query = <string>req.query.q;
