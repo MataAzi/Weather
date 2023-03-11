@@ -32,6 +32,12 @@ export default function Search() {
           />
           <SearchResult query={query} />
         </div>
+        <div className="alert alert-warning mt-3">
+          <span>
+            We are on free server so for your first query it may take up to 1
+            minute :)
+          </span>
+        </div>
       </div>
     </div>
   );
