@@ -22,25 +22,31 @@ export default function Layout({ children }) {
           <Container>
             <Navbar.Brand href="/">Weather Api</Navbar.Brand>
             <Nav className="me-auto">
-              <Link to='/' className="nav-link">Home</Link>
-              <Link to='/' className="nav-link">Github</Link>
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+              <Link to="https://github.com/MataAzi/Weather" className="nav-link">
+                Github
+              </Link>
             </Nav>
           </Container>
         </Navbar>
       </header>
-      <Outlet />
-      {children}
+      <div style={{ flexGrow: 1 }}>
+        <Outlet />
+        {children}
+      </div>
       <footer
         className="card glass py-3"
         style={{
           borderRadius: 0,
           bottom: 0,
           width: "100%",
-          position: state ? "absolute" : "relative",
+          // position: state ? "absolute" : "relative",
         }}
       >
         <div className="container">
-          <div className="d-flex justify-conent-between align-items-center">
+          <div className="row justify-conent-between align-items-center text-center">
             <div className="col-lg-6 d-flex align-items-center gap-3">
               <img src="/github.png" width={40} alt="" />
               <span>
@@ -48,7 +54,7 @@ export default function Layout({ children }) {
                 Apache licence.
               </span>
             </div>
-            <div>
+            <div className="col-lg-6 d-flex align-items-center justify-content-center">
               <span>Designed And Developed By: Matin Azizi</span>
             </div>
           </div>
